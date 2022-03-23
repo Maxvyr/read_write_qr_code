@@ -1,4 +1,4 @@
-# read_write_qr_code
+# Appli read_write_qr_code
 
 A new Flutter project.
 
