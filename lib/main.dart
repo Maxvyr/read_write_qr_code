@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'main_screen.dart';
+import 'view/qr_code_generate_view.dart';
 
 void main() => runApp(const ExampleApp());
 
@@ -20,7 +20,7 @@ class ExampleApp extends StatelessWidget {
       title: 'QR.Flutter',
       theme: ThemeData.light(),
       debugShowCheckedModeBanner: false,
-      home: const MainScreen(),
+      home: const QrCodeGenerateView(),
     );
   }
 }
