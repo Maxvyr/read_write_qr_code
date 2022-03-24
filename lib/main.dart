@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:read_write_qr_code/view/main_view.dart';
 
-import 'view/qr_code_generate_view.dart';
-
 void main() => runApp(const ExampleApp());
 
 class ExampleApp extends StatelessWidget {
