@@ -15,31 +15,30 @@ class _MainViewState extends ConsumerState<MainView> {
   @override
   Widget build(BuildContext context) {
     return BaseWidget(
-      child: Expanded(
-        child: Center(
-            child: Row(
-          children: [
-            ElevatedButton(
-              onPressed: () => UtilsNavigator.goToNextPage(
-                context,
-                const QrCodeScanView(),
-              ),
-              child: const Text(
-                "Scan QrCode",
-              ),
+      child: Center(
+          child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          ElevatedButton(
+            onPressed: () => UtilsNavigator.goToNextPage(
+              context,
+              const QrCodeScanView(),
             ),
-            ElevatedButton(
-              onPressed: () => UtilsNavigator.goToNextPage(
-                context,
-                const QrCodeGenerateView(),
-              ),
-              child: const Text(
-                "Generate QrCode",
-              ),
+            child: const Text(
+              "Scan QrCode",
             ),
-          ],
-        )),
-      ),
+          ),
+          ElevatedButton(
+            onPressed: () => UtilsNavigator.goToNextPage(
+              context,
+              const QrCodeGenerateView(),
+            ),
+            child: const Text(
+              "Generate QrCode",
+            ),
+          ),
+        ],
+      )),
     );
   }
 }

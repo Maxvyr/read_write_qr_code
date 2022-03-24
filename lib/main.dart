@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:read_write_qr_code/view/main_view.dart';
 
 import 'view/qr_code_generate_view.dart';
 
@@ -20,7 +21,7 @@ class ExampleApp extends StatelessWidget {
       title: 'QR.Flutter',
       theme: ThemeData.light(),
       debugShowCheckedModeBanner: false,
-      home: const QrCodeGenerateView(),
+      home: const MainView(),
     );
   }
 }
